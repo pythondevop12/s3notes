@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PythonDevOps Academy – Outro</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="scene">
+
+  <!-- Grid -->
+  <div id="grid"></div>
+
+  <!-- Animated circuit traces -->
+  <svg id="circuits" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+    <!-- Left side traces -->
+    <path class="circuit-path cp1" d="M0,350 H120 V180 H240 V220 H360 V180 H420"/>
+    <path class="circuit-path cp2" d="M0,500 H80 V420 H200 V460 H300"/>
+    <path class="circuit-path cp3" d="M60,700 V560 H180 V520 H260 V550 H340"/>
+    <!-- Right side traces -->
+    <path class="circuit-path cp4" d="M1200,300 H1080 V160 H960 V200 H840 V160 H780"/>
+    <path class="circuit-path cp5" d="M1200,540 H1100 V460 H980 V490 H900"/>
+    <path class="circuit-path cp6" d="M1140,700 V580 H1020 V540 H920 V570 H840"/>
+    <!-- Nodes -->
+    <circle class="circuit-node" cx="360" cy="180" r="4"/>
+    <circle class="circuit-node" cx="240" cy="180" r="3"/>
+    <circle class="circuit-node" cx="200" cy="420" r="3"/>
+    <circle class="circuit-node" cx="960" cy="160" r="4"/>
+    <circle class="circuit-node" cx="980" cy="460" r="3"/>
+    <circle class="circuit-node" cx="1080" cy="300" r="3"/>
+    <!-- Crosshair markers -->
+    <g stroke="#00e5ff" stroke-width="1" opacity=".5">
+      <line x1="120" y1="346" x2="120" y2="354"/><line x1="116" y1="350" x2="124" y2="350"/>
+      <line x1="300" y1="456" x2="300" y2="464"/><line x1="296" y1="460" x2="304" y2="460"/>
+      <line x1="900" y1="486" x2="900" y2="494"/><line x1="896" y1="490" x2="904" y2="490"/>
+      <line x1="840" y1="566" x2="840" y2="574"/><line x1="836" y1="570" x2="844" y2="570"/>
+    </g>
+  </svg>
+
+  <!-- Radial glow -->
+  <div id="glow-bg"></div>
+
+  <!-- CRT scanlines -->
+  <div id="scanline"></div>
+
+  <!-- Floating particles -->
+  <canvas id="particles"></canvas>
+
+  <!-- Corner brackets -->
+  <div class="corner corner-tl"></div>
+  <div class="corner corner-tr"></div>
+  <div class="corner corner-bl"></div>
+  <div class="corner corner-br"></div>
+
+  <!-- Logo + brand name -->
+  <div id="logo-wrap">
+    <img id="logo-img"
+         src="logo.png"
+         alt="PythonDevOps Academy Logo"
+         onerror="this.style.display='none'"/>
+    <div id="logo-text">
+      <span class="py">PYTHON</span><span class="devops">DEVOPS</span>
+      <span class="sub">A C A D E M Y</span>
+    </div>
+  </div>
+
+  <!-- Neon divider -->
+  <div id="divider"></div>
+
+  <!-- Main CTA text — rises from bottom at 2s -->
+  <div id="main-text">
+    <div class="watch-label">▶ &nbsp; new video alert &nbsp; ▶</div>
+    <div class="main-headline">
+      <span class="word-full">Watch</span>&nbsp;<span class="word-vid">Full&nbsp;Video</span><br>
+      <span class="word-on">on</span>&nbsp;<span class="word-yt">YouTube</span>
+    </div>
+    <div class="underline-bar"></div>
+    <div class="sub-cta">Subscribe &nbsp;·&nbsp; Like &nbsp;·&nbsp; Notify</div>
+  </div>
+
+  <!-- Status ticker -->
+  <div id="ticker">
+    <span class="tick-item">// SYS.UPLINK :: ACTIVE</span>
+    <span class="tick-item">STREAM_STATUS: ONLINE</span>
+    <span class="tick-item">CHANNEL.NODE :: VERIFIED ✓</span>
+  </div>
+
+</div>
+
+<script src="particles.js"></script>
+</body>
+</html>
